@@ -12,9 +12,11 @@ public class AnimalApp {
 		Albatross albatross = new Albatross();
 		
 		// Have them move
+		System.out.println("The animals are on the move...");
 		butterfly.move();
 		penguin.move();
 		albatross.move();
+		System.out.println();
 		
 		// Add them to an ArrayList
 		ArrayList<Animal> animals = new ArrayList<Animal>();
@@ -24,7 +26,9 @@ public class AnimalApp {
 		
 		// Have them eat
 		for (Animal animal : animals) {
+			System.out.println("The " + animal + " is going to eat...");
 			animal.eat();
+			System.out.println();
 		}
 		
 		// ===================================================
@@ -45,21 +49,22 @@ public class AnimalApp {
 		System.out.println("Birds: " + birds);
 		
 		// ===================================================
-		// Get all the swimmers and display them (implements Swimming interface)
+		// Get all the flyers and display them (implements Flight interface)
 		// ===================================================
 		
 		// Create a new list to hold the swimmers
-		ArrayList<Swimming> swimmers = new ArrayList<Swimming>();
+		ArrayList<Flight> flyers = new ArrayList<Flight>();
 		
-		// Iterate all animals and ad only swimming animals to the list
+		// Iterate all animals and add only flying animals to the list
 		for (Animal animal : animals) {
-			if (animal instanceof Swimming) { // Check that the animal can in fact swim
-				swimmers.add((Swimming) animal); // Cast the Animal specifically to a Swimming Animal
+			if (animal instanceof Flight) { // Check that the animal can in fact fly
+				// Cast the Animal specifically as one that implements the Flight interface
+				flyers.add((Flight) animal);
 			}
 		}
 		
 		// Output is pretty because all animals have a .toString() method from the Animal class
-		System.out.println("Swimmers: " + swimmers);
+		System.out.println("Flyers: " + flyers);
 	}
 
 }

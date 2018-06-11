@@ -15,4 +15,12 @@ public abstract class Bird extends Animal {
 		this.mouthPart = new Beak();
 	}
 	
+	// Notice that Bird inherits move() and eat() from Animal
+	// Since eat() is a non-abstract method (has a method body), any class
+	// that extends Bird will already have the eat() method
+	// It will also eat with its Beak (defined in the constructor)
+	// However, each class that extends Bird will still have to define
+	// its own move() method, since that method was abstract in Animal and
+	// neither Animal nor Bird defined a method body for it
+	
 }

@@ -1,11 +1,6 @@
 package org.wecancodeit.flexcode.module2.loops;
 
-import java.util.Scanner;
-
 public class LoopDemoApp {
-	
-	// Allows us to wait for user input (but only to pause)
-	static Scanner input = new Scanner(System.in);
 	
 	public static void main(String[] args) {
 		

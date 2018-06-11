@@ -9,7 +9,9 @@ public class RandomNumberApp {
 		// Create a random number generator
 		Random rand = new Random();
 		
+		// Do everything in this loop 20 times...
 		for (int i = 0; i < 20; i++) {
+			
 			// Get a random number, including 0, excluding the #
 			int zeroToFive = rand.nextInt(6);
 			
