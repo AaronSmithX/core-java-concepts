@@ -1,0 +1,19 @@
+# Ignore the folder where compiled Java bytecode is stored.
+# This does not need to be tracked by Git because it is derived
+# directly from the src/ folder's contents (Java code files).
+bin/
+
+# Ignore files and folders specific to Eclipse.
+# When we clone this repository with Git we will use Gradle
+# to set it back up as an Eclipse project (with`gradle eclipse`)
+# and these items will be re-created at that time.
+.classpath
+.project
+.settings/
+
+# Ignore the .gradle folder, a hidden folder where Gradle caches
+# info about this project to make future tasks faster.
+# This is helpful but doesn't belong in version control.
+# It will be re-created after the repository is cloned.
+.gradle
+
