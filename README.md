@@ -6,7 +6,9 @@ In Eclipse, you can right click and run any file with a name ending in "App" as 
 
 ## Setup
 
-This repo also contains examples of TESTING, which means it uses JUnit and Hamcrest, which means you will need to bring in those dependencies with Gradle. After cloning this project, run `gradle eclipse` to set it up before importing it into Eclipse.
+<!-- This repo also contains examples of TESTING, which means it uses JUnit and Hamcrest, which means you will need to bring in those dependencies with Gradle.-->
+
+After cloning this project, run `gradle eclipse` to set it up before importing it into Eclipse.
 
 ## Contents
 
